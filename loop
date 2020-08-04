@@ -22,3 +22,15 @@ agent any
     }
   }
 }
+       
+    }
+    stage("mavenstage"){
+      tools {
+        maven 'maven_stage_level'
+      }
+      steps{
+        sh "mvn --version"
+      }
+    }
+  }
+}
